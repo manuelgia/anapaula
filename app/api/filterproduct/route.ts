@@ -1,7 +1,7 @@
 import prisma from "@/app/prismadb"
 import { NextResponse } from "next/server"
 
-
+export const dynamic = 'force-dynamic'
 export async function GET(request: Request){
     try{
         const searchParams = new URLSearchParams(request.url.split('?')[1])

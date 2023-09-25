@@ -9,7 +9,7 @@ const corsHeader = {
     "Access-Control-Allow-Methods":"GET,POST, PUT, DELETE, OPTIONS",
     "Access-Control-Allow-Headers":"Content-Type, Authorization"
 }
-
+export const dynamic = 'force-dynamic'
 export async function OPTIONS () {
     return NextResponse.json({}, {headers:corsHeader})
 }
