@@ -116,7 +116,7 @@ const Filter = (props: Props) => {
         <div className='relative'>
             <div className={`md:w-[250px] border-l-[0.5px] border-r-[0.5px] ${showFilter ? "max-md:w-[250px]":"w-0 max-md:invisible"}`}>
                 <div className='flex items-center justify-between px-5 py-4 border-b-[0.5px]'>
-                        <h1 className='text-neutral-800'>Filters</h1>
+                        <h1 className='text-neutral-800'>Filtros</h1>
                         <BsSliders2Vertical size={20} className = 'text-neutral-600' />
                 </div>
                 <div className='flex flex-col py-3 pb-5 tet-sm text-neutral-600 border-b-[0.5px]'>
@@ -124,13 +124,13 @@ const Filter = (props: Props) => {
                         className={`py-3 px-5 ${selectedCategories.includes('Blouses') ? "bg-purple-50":""}`}
                         onClick={() => toggleCategory('Blouses')}
                     >
-                        Blouses
+                        Zapatillas
                     </span>
                     <span
                         className={`py-3 px-5 ${selectedCategories.includes('Shirt') ? "bg-purple-50":""}`}
                         onClick={() => toggleCategory('Shirt')}
                     >
-                        Shirt
+                        Polos
                     </span>
                     <span 
                     className={`py-3 px-5 ${selectedCategories.includes('Denim&Jeans') ? 'bg-purple-50' : ''}`}
@@ -142,19 +142,19 @@ const Filter = (props: Props) => {
                         className={`py-3 px-5 ${selectedCategories.includes('Party') ? 'bg-purple-50' : ''}`}
                         onClick={() => toggleCategory('Party')}
                     >
-                    Party
+                        Fiesta
                     </span>
                     <span 
                         className={`py-3 px-5 ${selectedCategories.includes('Pants') ? 'bg-purple-50' : ''}`}
                         onClick={() => toggleCategory('Pants')}
                     >
-                        Pants
+                        Pantalones
                     </span>
                     <span 
                         className={`py-3 px-5 ${selectedCategories.includes('Skirts') ? 'bg-purple-50' : ''}`}
                         onClick={() => toggleCategory('Skirts')}
                     >
-                        Skirts
+                        Trajes
                     </span>
                     <span 
                         className={`py-3 px-5 ${selectedCategories.includes('Tops&tees') ? 'bg-purple-50' : ''}`}
@@ -166,12 +166,12 @@ const Filter = (props: Props) => {
                         className={`py-3 px-5 ${selectedCategories.includes('Jackets&Coats') ? 'bg-purple-50' : ''}`}
                         onClick={() => toggleCategory('Jackets&Coats')}
                     >
-                        Jackets&Coats
+                        Chaquetas
                     </span>
                 </div>
                 <div className='border-b-[0.5px] pb-10'>
                     <div className='flex items-center justify-between px-5 py-4 border-b-[0.5px] mb-5'>
-                        <h1 className='text-neutral-800'>Prices</h1>
+                        <h1 className='text-neutral-800'>Precios</h1>
                         <BsChevronUp size={18} className = 'text-neutral-600' />
                     </div>
                     <div className='grid grid-cols-2 gap-5 px-5 overflow-hidden'>
