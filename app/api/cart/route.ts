@@ -1,7 +1,6 @@
 import prisma from "@/app/prismadb"
 import { NextResponse } from "next/server"
 
-export const dynamic = 'force-dynamic'
 export async function POST(request:Request){
     const body = await request.json()
     const {productId, userId} = body
